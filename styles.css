@@ -457,7 +457,10 @@ main {
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
-.plans__card--recomendado {
+.plans__card--recomendado,
+.plans__card--basico,
+.plans__card--limitado
+{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -468,6 +471,14 @@ main {
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
     color: var(--just-white);
+}
+
+.plans__card--basico {
+    background-color: var(--secondary-blue);
+}
+
+.plans__card--limitado{
+    background-color: gray;
 }
 
 .card-info__title {
@@ -519,4 +530,12 @@ main {
     height: 20px;
     background-image: url('./assets/icons/arrow-right.svg');
     vertical-align: text-bottom;
+}
+
+.button__basico{
+    border: 2px solid var(--secondary-blue);
+}
+
+.button__limitado{
+    border: 2px solid gray;
 }
